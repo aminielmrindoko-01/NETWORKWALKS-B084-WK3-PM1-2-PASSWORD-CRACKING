@@ -64,7 +64,7 @@ The selected attack mode, wordlist, and runtime are not visible. Earlier status 
 
 The final Johnny result shows format PDF and `100% (1/1: 1 cracked, 0 left)`. The recovered password is `good-luck`.
 
-![Project Module 1 — Johnny password result](labs/01-john-the-ripper/screenshots/2026-11-20-213833.png)
+![Project Module 1 — Johnny password result](labs/01-john-the-ripper/screenshots/Screenshot%202026-11-20%20213833.png)
 
 ### Step 4: Verify the PDF and capture the flag
 
