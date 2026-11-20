@@ -7,8 +7,7 @@
 | Field | Detail |
 | --- | --- |
 | Student Name (Cybersecurity Professional) | AMINIELI MRINDOKO |
-| Program / Batch | ______________________________ |
-| Instructor | ______________________________ |
+| Program / Batch | B084 |
 | Submission Date | 30 November 2026|
 | Modules Documented | W3-PM1 — Password Cracking with JTR; W3-PM2 — Password Cracking with NW Tools |
 | Training Target | `My Locked PDF1.pdf` |
