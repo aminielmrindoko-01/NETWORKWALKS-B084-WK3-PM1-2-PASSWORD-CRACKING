@@ -32,7 +32,7 @@ The assignment titles supplied for this report are:
 1. `W3-PM1 - Week3 - Project Module1 - Password Cracking with JTR v1.pdf`
 2. `W3-PM2 - Week3 - Project Module2 - Password Cracking with NW Tools v1.pdf`
 
-**Assignment source:** [Networkwalks Week 3 Google Drive folder](https://drive.google.com/drive/folders/1BipNY5NSQpPB3KSJwdJiu6X0VA1FVbcM).
+
 
 This report is based on the supplied screenshots and hash file. The full assignment briefs and marking rubrics have not been reviewed. No new password-recovery run was performed while preparing this repository.
 
