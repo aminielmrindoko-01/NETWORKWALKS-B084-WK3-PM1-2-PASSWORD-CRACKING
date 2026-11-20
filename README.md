@@ -25,14 +25,12 @@ The screenshots retain the exercise solution and local desktop information as su
 
 This report covers two separate Week 3 projects: **Password Cracking with JTR (W3-PM1)** and **Password Cracking with NW Tools (W3-PM2)**. Both concern the training document `My Locked PDF1.pdf`, using different interfaces to recover its password.
 
-Project Module 1 uses Johnny, the graphical interface for John the Ripper. Project Module 2 uses the Networkwalks Hash Calculator and Password Cracker. Each project has its own walkthrough and screenshot evidence.
+Project Module 1 uses Johnny, the graphical interface for John the Ripper. Project Module 2 uses the Networkwalks Hash Calculator and Password Cracker. Each project has its own screenshot evidence in this repository.
 
 The assignment titles supplied for this report are:
 
 1. `W3-PM1 - Week3 - Project Module1 - Password Cracking with JTR v1.pdf`
 2. `W3-PM2 - Week3 - Project Module2 - Password Cracking with NW Tools v1.pdf`
-
-
 
 This report is based on the supplied screenshots and hash file. The full assignment briefs and marking rubrics have not been reviewed. No new password-recovery run was performed while preparing this repository.
 
@@ -47,7 +45,7 @@ This report is based on the supplied screenshots and hash file. The full assignm
 | Networkwalks Hash Calculator | Shows file digests and PDF-specific extraction output. |
 | Networkwalks Password Cracker | Runs the browser dictionary exercise and displays its results. |
 | Browser PDF viewer | Shows the password prompt and opened training PDF. |
-| `hash1.txt` | Supplied PDF hash preserved in the repository. |
+| [`hash1.txt`](labs/01-john-the-ripper/screenshots/hash1.txt) | Supplied PDF hash preserved in the repository. |
 
 # 4. Activities Performed
 
@@ -55,7 +53,7 @@ This report is based on the supplied screenshots and hash file. The full assignm
 
 ### Step 1: Open Johnny and prepare the hash
 
-The initial capture shows Johnny open with an empty password list. A later capture shows extraction completed for `My Locked PDF1.pdf`, with output beginning `$pdf$4*4*128*`. The supplied value is preserved in [hash1.txt](labs/01-john-the-ripper/inputs/hash1.txt).
+The initial capture shows Johnny open with an empty password list. A later capture shows extraction completed for `My Locked PDF1.pdf`, with output beginning `$pdf$4*4*128*`. The supplied value is preserved in [`hash1.txt`](labs/01-john-the-ripper/screenshots/hash1.txt).
 
 ### Step 2: Load the hash and configure the engine
 
@@ -73,9 +71,7 @@ The final Johnny result shows format PDF and `100% (1/1: 1 cracked, 0 left)`. Th
 
 The following captures show a password prompt and then the opened one-page document. The displayed flag is `nw{cybersecurity_flag_captured_2608}`.
 
-![Project Module 1 — Opened PDF and flag](labs/01-john-the-ripper/screenshots/2026-11-20-214010.png)
-
-**Complete procedure and eight screenshots:** [Project Module 1 walkthrough](labs/01-john-the-ripper/README.md).
+![Project Module 1 — Opened PDF and flag](labs/01-john-the-ripper/screenshots/Screenshot%202026-11-20%20214010.png)
 
 ## 4.2 Project Module 2 — Password Cracking with NW Tools
 
@@ -91,17 +87,15 @@ The later calculator capture uses the PDF view and displays structured output be
 
 The built-in list contains 100 entries. The result shows `100 / 100` candidates tried and reports that the password was not cracked with that wordlist. This establishes the outcome of that attempt, not that recovery is impossible.
 
-![Project Module 2 — Built-in wordlist failure](labs/02-networkwalks/screenshots/2026-11-20-215238.png)
+![Project Module 2 — Built-in wordlist failure](labs/02-networkwalks/screenshots/Screenshot%202026-11-20%20215238.png)
 
 ### Step 4: Record the successful attempt
 
 The later screenshot shows `99 / 99`, a log match for `good-luck`, and a success message. The active wordlist is not visible in that capture.
 
-![Project Module 2 — Successful password match](labs/02-networkwalks/screenshots/2026-11-20-215713.png)
+![Project Module 2 — Successful password match](labs/02-networkwalks/screenshots/Screenshot%202026-11-20%20215713.png)
 
-The source file `passwords_list.txt` returned an access-denied response during repository preparation. Its contents and relationship to this run remain unverified. See the [input availability note](labs/02-networkwalks/inputs/README.md).
-
-**Complete procedure and five screenshots:** [Project Module 2 walkthrough](labs/02-networkwalks/README.md).
+The source file [`passwords_list.txt`](labs/02-networkwalks/screenshots/passwords_list.txt) is also preserved in the repository. Its contents and relationship to this run remain unverified.
 
 ## 4.3 Results Summary
 
@@ -128,12 +122,12 @@ These findings describe the training evidence, not a security assessment of Netw
 
 # 6. Recommendations
 
-1. **Replace the demonstrated password in any reused copy.** Treat `good-luck` as disclosed because it appears in this report and its screenshots.
+1. **Replace the demonstrated password in any reused copy.** Treat `good-luck` as disclosed because it appears in this report and screenshots.
 2. **Check the input format before starting.** Preserve the complete PDF-specific extraction value for this exercise.
 3. **Record each attempt's configuration.** Include tool versions, attack options, wordlist identity, candidate count, and runtime when available.
 4. **Retain unsuccessful results.** Keep the failed attempt alongside the success to document the actual sequence.
 5. **Verify each project's outcome.** Add a post-run PDF-opening capture for Project Module 2 if required by its brief.
-6. **Complete missing submission material.** Fill in personal details, supply the readable original wordlist if required, and check both assignment briefs.
+6. **Complete missing submission material.** Fill in personal details and check both assignment briefs.
 7. **Review the sharing audience.** Confirm whether the course permits public distribution of its materials and flag before publishing.
 
 # 7. Conclusion
@@ -142,25 +136,33 @@ The supplied Week 3 screenshots document successful PDF password recovery using 
 
 The exercise illustrates the importance of selecting the correct extraction format, documenting unsuccessful and successful attempts, and verifying tool output against the target document. Missing attack settings and wordlist information limit exact reproducibility.
 
-
 ## Repository structure
 
 ```text
-networkwalks/
+NETWORKWALKS-B084-WK3-PM1-2-PASSWORD-CRACKING/
 ├── README.md
-├── docs/
-│   ├── project-report.md
-├── labs/
-│   ├── 01-john-the-ripper/              # W3-PM1: JTR project
-│   │   ├── README.md
-│   │   ├── inputs/hash1.txt
-│   │   └── screenshots/                 # 8 original captures
-│   └── 02-networkwalks/                # W3-PM2: NW Tools project
-│       ├── README.md
-│       ├── inputs/README.md              # Wordlist availability note
-│       └── screenshots/                 # 5 original captures
+└── labs/
+    ├── 01-john-the-ripper/
+    │   └── screenshots/
+    │       ├── 2026-11-20-213833.png
+    │       ├── Screenshot 2026-11-20 210929.png
+    │       ├── Screenshot 2026-11-20 211753.png
+    │       ├── Screenshot 2026-11-20 212225.png
+    │       ├── Screenshot 2026-11-20 213631.png
+    │       ├── Screenshot 2026-11-20 213701.png
+    │       ├── Screenshot 2026-11-20 213833.png
+    │       ├── Screenshot 2026-11-20 213955.png
+    │       ├── Screenshot 2026-11-20 214010.png
+    │       └── hash1.txt
+    └── 02-networkwalks/
+        └── screenshots/
+            ├── Screenshot 2026-11-19 220801.png
+            ├── Screenshot 2026-11-20 214659.png
+            ├── Screenshot 2026-11-20 214847.png
+            ├── Screenshot 2026-11-20 214932.png
+            ├── Screenshot 2026-11-20 215238.png
+            ├── Screenshot 2026-11-20 215713.png
+            └── passwords_list.txt
+```
 
-
-
-This verifies screenshot checksums and local Markdown link targets. No application installation or package dependencies are needed to read the report
 — End —
